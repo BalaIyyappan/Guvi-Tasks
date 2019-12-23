@@ -1,0 +1,229 @@
+1. Write a program to perform input/output of all basic data types.
+SOL:
+integer=int(input('Integer input:'))
+float_num=float(input("Float input:"))
+string=input("String input:")
+print(integer," ",float_num," ",string)
+
+
+2. Write a program to enter two numbers and find their sum
+SOL:
+num1=int(input("First Number:"))
+num2=int(input("Second Number:"))
+add=num1+num2
+print("Sum is:",add)
+
+
+3. Write a program to enter two numbers and perform all arithmetic operations.
+SOL:
+num1=int(input("First Number:"))
+num2=int(input("Second Number:"))
+add=num1+num2
+sub=num1-num2
+div=num1/num2
+mul=num1*num2
+mod=num1%num2
+print("Sum is:",add)
+print("Subtraction is:",sub)
+print("Division is:",div)
+print("Multiplication is:",mul)
+print("Modulus  is:",mod)
+
+
+4. Write a program to enter length and breadth of a rectangle and find its perimeter.
+SOL:
+num1=int(input("First Number:"))
+num2=int(input("Second Number:"))
+per=2*(num1+num2)
+print("Perimeter of rectangle: ",per)
+
+
+5. Write a program to enter length and breadth of a rectangle and find its area.
+SOL:
+num1=int(input("First Number:"))
+num2=int(input("Second Number:"))
+area=(num1*num2)
+print("Area of rectangle: ",area)
+
+
+6. Write a program to enter radius of a circle and find its diameter, circumference and area.
+SOL:
+num1=float(input("Radius:"))
+area=3.14*(num1**2)
+cir=2*3.14*num1
+dia=num1*2
+print("Area of circle: ",area)
+print("Circumference of circle:",cir)
+print("Diameter of circle:",dia)
+
+
+7. Write a program to enter length in centimeter and convert it into meter and kilometre
+SOL:
+l=int(input("Enter length in centimeter:"))
+meter=l/100
+kilo=meter/1000
+print("In meter:",meter,"m")
+print("In kilometer:",kilo,"Km")
+
+
+8. Write a program to enter temperature in Celsius and convert it into Fahrenheit
+SOL:
+t=int(input("Temperature in celsius:"))
+f=(t*(9/5))+32
+print("Temperature in F:",f,'F')
+
+
+9. Write a program to enter temperature in Fahrenheit and convert to Celsius
+SOL:
+t=int(input("Temperature in Farenheit:"))
+c=(t*2)*1/10
+print("Temperature in C:",c,'C')
+
+
+10. Write a program to convert days into years, weeks and days.
+SOL:
+days=int(input("Number of days:"))
+years=int(days/365)
+week=int((days%365)/7)
+days=days-((years*365)+(week*7))
+print("Years:",years)
+print("Weeks:",week)
+print("Days:",days)
+
+
+11. Write a program to find power of any number x ^ y.
+SOL:
+x=int(input("Enter x:"))
+y=int(input("Enter y:"))
+result=x**y
+print(result)
+
+
+12. Write a program to enter any number and calculate its square root.
+SOL:
+import math as m
+num=int(input("Enter any number:"))
+result=int(m.sqrt(num))
+print("Square root is:",result)
+
+
+13. Write a program to enter two angles of a triangle and find the third angle.
+SOL:
+su=180
+f=int(input("First angle:"))
+s=int(input("Second angle:"))
+t=abs(s-(f+s))
+print("Third angle:",t)
+
+
+14. Write a program to enter base and height of a triangle and find its area.
+SOL:
+b=int(input("Enter Base:"))
+h=int(input("Enter Height:"))
+area=(h*b)*0.5
+print("Area of triangle:",area)
+
+
+15. Write a program to calculate area of an equilateral triangle.
+SOL:
+from math import sqrt
+a=int(input("Enter the side:"))
+area=(sqrt(3)/4)*a*a
+print("{:.2f}".format(area))
+
+
+16. Write a program to enter marks of five subjects and calculate total, average and percentage.
+SOL:
+m1,m2,m3,m4,m5=input().split()
+m1=int(m1)
+m2=int(m2)
+m3=int(m3)
+m4=int(m4)
+m5=int(m5)
+s=m1+m2+m3+m4+m5
+a=int(s/5)
+p=(s/500)*100
+print(s)
+print(a)
+print(p)
+
+
+17. Write a program to enter P, T, R and calculate Simple Interest.
+SOL:
+p,n,r=input("Enter Principle , Number of YEAR , Interest:").split()
+p=int(p)
+n=int(n)
+r=float(r)
+si=p*n*r/100
+print(si)
+
+
+18. Write a program to enter P, T, R and calculate Compound Interest.
+SOL:
+p,n,r,t=input("Enter Principle , Number of YEAR , Interest , Time of period:").split()
+p=int(p)
+n=int(n)
+r=float(r)
+t=int(t)
+ci=p*(1+r/n)*n*t
+print(ci)
+
+
+19. Write a program to find maximum between two numbers.
+SOL:
+num1=int(input("Enter first number:"))
+num2=int(input("Enter second number:"))
+
+if num1>num2:
+    print(num1,"Num 1 is great")
+elif num1==num2:
+    print(num2,"Equal")
+else:
+    print(num2,"Num 2 is great")
+    
+    
+20. Write a program to find maximum between three numbers.
+SOL:
+num1=int(input("Enter first number:"))
+num2=int(input("Enter second number:"))
+num3=int(input("Enter third number:"))
+
+if num1>num2 and num1>num3:
+    print(num1,"is Bigger")
+elif num2>num1 and num2>num3:
+    print(num2,"is Bigger")
+else:
+    print(num3,'is Bigger')
+    
+    
+21. Write a program to check whether a number is negative, positive or zero.
+SOL:
+num=input("Enter any number:")
+if num=='0':
+    print(num,"is ZERO")
+elif '-' in num:
+    print("Negative Number")
+else:
+    print("Positive Number")
+    
+    
+22. Write a program to check whether a number is divisible by 5 and 11 or not
+SOL:
+num=int(input("Enter any number:"))
+if num%5==0 and num%11==0:
+    print(num,"is Divisible by 5 and 11")
+else:
+    print("Number is not divisible by 5 and 11")
+    
+    
+23. Write a program to check whether a number is even or odd.
+SOL:
+num=int(input("Enter any number:"))
+if num%2==0:
+    print(num,"is Even")
+else:
+    print("Number is Odd")
+    
+    
+24. Write a program to check whether a year is leap year or not.
+
