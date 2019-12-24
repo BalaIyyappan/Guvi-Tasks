@@ -245,3 +245,85 @@ if alpha in ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q'
   print("Yes")
 else:
   print("No")
+  
+26.Write a program to input any alphabet and check whether it is vowel or consonant
+SOL:
+ch=input("Enter any character:")
+if ch=='a' or ch=='e' or ch=='i' or ch=='o' or ch=='u':
+  print(ch,"It is a vowel")
+else:
+  print(ch,"It is a consonent")
+27.Write a program to input any character and check whether it is alphabet, digit or special character. 
+SOL:
+alpha=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+digit=['0','1','2','3','4','5','6','7','9','8']
+sp=['!',"@",'#','$','%','^','&','*','(',')','~']
+inp=input("Enter any alphabet or digit or special character:")
+if inp in alpha:
+  print("It is an alphabet")
+elif inp in digit:
+  print("It is a digit")
+elif inp in sp:
+  print("It is a Special Character")
+else:
+  pass
+28.Write a program to check whether a character is uppercase or lowercase alphabet. 
+SOL:
+ch=input("Enter any character:")
+
+if ch.isupper()==True:
+  print("It is in upper case")
+elif ch.iSlower()==True:
+  print("It is in lower case")
+else:
+  print("Cannot determine")
+29.Write a program to input week number and print week day. 
+SOL:
+week=int(input("Enter week number:"))
+if week==1:
+  print("Monday")
+elif week==2:
+  print("Tuesday")
+elif week==3:
+  print("Wednesday")
+elif week==4:
+  print("Thursday")
+elif week==5:
+  print("Friday")
+elif week==6:
+  print("Saturday")
+elif(week==7):
+  print("Sunday")
+else:
+  pass
+30.Write a program to input month number and print number of days in that month. 
+SOL:
+month=int(input('Enter the month number:1-January 2-February 3-March 4-April 5-May 6-June 7-July 8-August 9-September 10-October 11-November 12-December:'))
+if month==1:
+  print("It has 31 days")
+elif month==2:
+  print("It has 28 days")
+elif month==3:
+  print("It has 31 days")
+elif month==4:
+  print("It has 30 days")
+elif month==5:
+  print("It has 31 days")
+elif month==6:
+  print("It has 30 days")
+elif month==7:
+  print("It has 31 days")
+elif month==8:
+  print("It has 31 days")
+elif month==9:
+  print("It has 30 days")
+elif month==10:
+  print("It has 31 days")
+elif month==11:
+  print("It has 30 days")
+elif month==12:
+  print("It has 31 days")
+else:
+  pass
+31.Write a program to count total number of notes in given amount. 
+
