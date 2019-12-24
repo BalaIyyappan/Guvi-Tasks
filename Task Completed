@@ -226,4 +226,22 @@ else:
     
     
 24. Write a program to check whether a year is leap year or not.
-
+SOL:
+year=int(input("Enter the year:"))
+if year%400==0:
+  print(year,"is Leap Year")
+elif(year%100==0):
+  print(year,"is not a Leap Year")
+elif(year%4==0):
+  print(year,"is Leap Year")
+else:
+  print(year,"is not a Leap Year")
+ 
+ 
+25.Write a program to check whether a character is alphabet or not. 
+SOL:
+alpha=input('Enter an alphabet:')
+if alpha in ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']:
+  print("Yes")
+else:
+  print("No")
