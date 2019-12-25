@@ -112,7 +112,7 @@ SOL:
 su=180
 f=int(input("First angle:"))
 s=int(input("Second angle:"))
-t=abs(s-(f+s))
+t=abs(su-(f+s))
 print("Third angle:",t)
 
 
@@ -562,6 +562,61 @@ n=input("Enter any number:")
 
 print('First digit is:',n[0])
 print("Last digit is:",n[-1])
+
+52.Write a program to find sum of first and last digit of a number. 
+SOL:
+n=input("Enter any number:")
+f=n[0]
+f=int(f)
+l=n[-1]
+l=int(l)
+s=f+l
+print('Sum of first and last digit is',s)
+
+53.Write a program to swap first and last digits of a number
+SOL:
+n=input("Enter any number:")
+f=n[-1]
+l=n[0]
+
+print('Swapped number is:',f,n[1:-1],l)
+
+54.Write a program to calculate sum of digits of a number. 
+SOL:
+n=int(input("Enter any number:"))
+s=0
+while n!=0:
+  i=n%10
+  s=s+i
+  n=int(n/10)
+print("Sum of numbers is :",s)
+
+55.Write a program to calculate product of digits of a number. 
+SOL:
+n=int(input("Enter any number:"))
+s=1
+while n!=0:
+  i=n%10
+  s=s*i
+  n=int(n/10)
+print("Sum of numbers is :",s)
+
+56.Write a program to enter a number and print its reverse. 
+SOL:
+n=input("Enter any number:")
+print("Reverse of number is:",n[::-1])
+
+57.Write a program to check whether a number is palindrome or not. 
+SOL:
+n=input("Enter any number:")
+temp=n
+temp=temp[::-1]
+if temp==n:
+  print("Number is palindrome")
+else:
+  print("Number is not a palindrome")
+
+58.Write a program to find frequency of each digit in a given integer. 
 
 
 
