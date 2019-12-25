@@ -326,4 +326,146 @@ elif month==12:
 else:
   pass
 31.Write a program to count total number of notes in given amount. 
+32.Write a program to input angles of a triangle and check whether triangle is valid or not. 
+SOL:
+angle1=int(input('Enter 1st angle of a triangle:'))
+angle2=int(input('Enter 2nd angle of a triangle:'))
+angle3=int(input('Enter 3rd angle of a triangle:'))
+s=angle1+angle2+angle3
+
+if s==180:
+  print("Triangle is valid")
+else:
+  print("Triangle is not valid")
+33.Write a program to input all sides of a triangle and check whether triangle is valid or not. 
+SOL:
+side1=int(input('Enter 1st angle of a triangle:'))
+side2=int(input('Enter 2nd angle of a triangle:'))
+sidle3=int(input('Enter 3rd angle of a triangle:'))
+
+
+if side1**2==(side2**2+sidle3**2) or side2**2==(side1**2+sidle3**2) or sidle3**2==(side1**2+side2**2):
+  print("Triangle is valid")
+else:
+  print("Triangle is not valid")
+34.Write a program to check whether the triangle is equilateral, isosceles or scalene triangle. 
+SOl:
+side1=int(input('Enter 1st side of a triangle:'))
+side2=int(input('Enter 2nd side of a triangle:'))
+side3=int(input('Enter 3rd side of a triangle:'))
+
+
+if side1==side2 and side2==side3:
+  print("Triangle is Equilateral")
+elif side1==side2 or side2==side3 or side3==side1 :
+  print("Triangle is isosceles")
+elif side1!=side2 and side2!=side3 and side3!=side1:
+  print("Triangle is scalene")
+else:
+  print("It is not a triangle")
+
+35.Write a program to find all roots of a quadratic equation. 
+SOL:
+from math import sqrt
+side1=float(input('Enter 1st side of a triangle:'))
+side2=float(input('Enter 2nd side of a triangle:'))
+side3=float(input('Enter 3rd side of a triangle:'))
+
+d=side2*side2-(4*side1*side3)
+if d>0:
+  r1=(-side2+sqrt(d))/(2*side1)
+  r2=(-side2*sqrt(d))/(2*side1)
+  print("Roots are",r1,r2)
+elif d==0 :
+  r1=-side2/(2*side1)
+  
+  print("Roots are Root1=Root2",r1)
+else:
+  r=-side2/(2*side1)
+  i=sqrt(-d)/(2*side1)
+  print("Real and imaginary parts are",r,i)
+  
+  
+ 36.Write a program to calculate profit or loss. 
+ SOL:
+ cp=int(input("Enter the cost price"))
+sp=int(input("Enter the selling price"))
+p=sp-cp
+l=cp-sp
+if cp==sp:
+  print("No profit no loss")
+elif sp>cp:
+  print("Profit is",p)
+else:
+  print("Loss is",l)
+
+37.Write a program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following:
+SOL:
+phy=int(input("Enter mark for physics"))
+che=int(input("Enter mark for Chemistry"))
+mat=int(input("Enter mark for MATHS"))
+bio=int(input("Enter mark for Biology"))
+cse=int(input("Enter mark for CSE"))
+s=phy+che+mat+bio+cse
+a=int((s/500)*100)
+if a<40:
+  print("GRADE F")
+elif a>40 and a<60:
+  print("GRADE E")
+elif a>=60 and a<70:
+  print("GRADE D")
+elif a>=70 and a<80:
+  print("GRADE C")
+elif a>=80 and a<90:
+  print("GRADE B")
+elif a>=90:
+  print("GRADE A")
+else:
+  pass
+
+38.Write a program to input basic salary of an employee and calculate its Gross salary .
+SOL:
+basic=int(input("Enter basic salary:"))
+if basic<=10000:
+  h=basic*0.2
+  d=basic*0.8
+  g=h+d+basic
+  print("Gross Salary is:",g)
+elif basic<=20000:
+  h=basic*0.25
+  d=basic*0.9
+  g=h+d+basic
+  print("Gross Salary is:",g)
+elif basic>20000:
+  h=basic*0.3
+  d=basic*0.95
+  g=h+d+basic
+  print("Gross Salary is:",g)
+  
+  
+39.Write a program to input electricity unit charges and calculate total electricity bill 
+SOL:
+unit=int(input("Enter the number of units:"))
+if unit<=50:
+  a=unit*0.50
+elif unit<100:
+  a=25+(unit-50*0.75)
+elif unit>100 and unit<=250:
+  a=100+(unit-100*1.20)
+elif unit>250:
+  a=220+(unit-150*1.50)
+else:
+  pass
+sur=a*0.20
+t=a+sur
+print("The Total amount is",t,'Rs')
+
+40.Write a program to print day of week name using switch case. 
+SOL:
+week={1:'Monday',2:'Tuesday',3:'Wednesday',4:'Thursday',5:'Friday',6:'Saturday',7:'Sunday'}
+day=int(input('Enter the week number:'))
+print(week[day])
+
+
+
 
