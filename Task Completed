@@ -618,6 +618,53 @@ else:
 
 58.Write a program to find frequency of each digit in a given integer. 
 
+59.Write a program to enter a number and print it in words. 
+SOL:
+i=input("Enter the number:")
+words={'1':'One','2':'Two','3':'Three','4':'Four','5':'Five','6':'Six','7':'Seven','8':'Eight','9':'Nine','0':'Zero'}
+for j in i:
+  print(words[j])
+  
+59.Write a program to print all ASCII character with their values. 
+SOL:
+a=97
+A=65
+print("Capital letters:")
+for i in range(65,91):
+  print(chr(i))
+print("Small letters:")
+for i in range(97,123):
+  print(chr(i))
+  
+60.Write a program to find power of a number using for loop. 
+SOL:
+n1=int(input("Enter the number:"))
+p=int(input("Enter the power:"))
+s=n1
+temp=1
+for i in range(1,p+1):
+  temp=temp*s
+print('Power of',n1,'and',p,'is:',temp)
+
+61.Write a program to find all factors of a number. 
+SOL:
+num=int(input("ENter any number:"))
+a=[]
+for i in range(1,num+1):
+  if num%i==0:
+    a.append(i)
+print(a)
+
+62.Write a program to calculate factorial of a number.
+SOL:
+num=int(input("Enter any number:"))
+fact=1
+for i in range(1,num+1):
+  fact=fact*i
+print('Factorial of ',num,'is:',fact)
+
+
+
 
 
 
