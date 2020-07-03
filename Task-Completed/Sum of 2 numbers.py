@@ -2,5 +2,5 @@
 SOL:
 num1=int(input("First Number:"))
 num2=int(input("Second Number:"))
-add=num1+num2
+add=int.__add__(num1,num2)
 print("Sum is:",add)
